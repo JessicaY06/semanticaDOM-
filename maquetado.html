@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
-    <nav></nav>
     <aside></aside>
-    <section>
-        <h1>Compañia Meta/</h1>
+    <a href="#">Inicio </a> 
+    <a href="historia">Historias </a>
+    <a href="Noticias">Noticias </a>
+    </nav>
+    <section id ="historia">
+        <h1> historia de la compañía Meta</h1>
         <article>
-            <h2>Antes Facebook</h2>
+            <h2> Antes Facebook</h2>
+    <div class="flex-container">
+            <img src= "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAA9lBMVEX///8AgP8AZ+cJJzECefkCcO0AICsBfv7///0Ca+oAABcAFyRJWF3S1dYAZucBff4AJC5SXmQDdfIAGycACx29wsOLlJYAdv4cN0EAev9zfYEAYucAXuZ5g4YAABMCevkAX+YAAACQm5wAWuYAESAAAA3q8/4ACBrq7Ozv9/zZ6vkAb/jZ3d23vL1cam/l7PthpPoUbucpi/yvzvq0zPGTvvkWhft2o+3K3/qixfp1rfnN4PlOmvyrsbPf4+OowvA0euhileqJuPuHq+05fuiOse5tm+tZkOxKhurA2v6fxflNmvhkpflNielBkvwwgvIzSE88TlQlhfLQAAARyUlEQVR4nO2dCVviOhfHQZamIC0KWCsICAgUFFccFRgVZ1Pn9er3/zJv26RLltLUhUl9+N9n5pkLTWl+5JycnJyWRGKlleIvYP4xjix1nf99w0kAMLrWKQzw1lPEQUc3v27laq3dbteq8u3deAIi9xWAyfjpQtI1TdPV5HT+YHzGhf5zDe5ParWqoihrthSl2mw3f59HwgUG10kTkiQlbUmqrmvTxy82ugA4/9GuIkw+KdVa7dsR91kup5qOOHlSde168IV4gfPbdpUi5fBq3x3x9BUMpppKkkK8tGOuU8RBgx9telD5VK19Cz8JuA5CBXHNP78fSxC4DxxVrprKechJJhd6MCpL+sVl/AfX0W0zDJVljO27RScBY43yVaQk7TrmtMB5+LBCtngyCewreNLCUNmD6znWcQT42eZDZQ2u2k3AWYzTEBN0PVdysNTufajAL35WlineswJy0L1Y4NkJWvrl8nv5MQK/axFYmWrfMWANJG5WprSH5ffzIxSZlTkr/qFoDdQorJLJYSxpgbvIrNbWav8jaHUZrKxFjrk01JkUJW3yb/r7HpnhVXRWFC2D8leSrk/nZw+Th7P5lMlLSsdv8XPzJlYWLf9ZTgkaknbxaNgsgLngNM5ZKyD1Im4RxCSYlaK4qQeWmp6XB1MiZlD1M2zUAGvBSC+tn+M1tAxGisEGVa3VlJOTtWq7FnCEOSd+Q30F1wQr7ZiiAMADPVvq8zjRAn+YcbvSrN6dWzlSYBzd3Cm1AFztn7Cvj3jcLmlnTAYGHd/HKoBgB+7V6k/Mm9ycBOBq28vqyRA3LjVomgNzkpbUiI/bGjBZte/IHoCbKnsEts1liyFhzkiVgic5c51Nui3aYAUVuGUgUNqsDLLBDlyVNSPxjDksSe8u6v4jSUsLyfkIo58MAIockD2+Yppi9c8cm+XCgidqbEnJz+jZx6vbpLtfPekGHX7JONxsoFgd9gZK2AIZ/CVmTj0W2S3wmzbCBaxMD8cOIjaTMCSwXJcWvoMDnokIQotDuoYRjirVBawSiSMmLaVhe3jJlHbN8bndNOHjn8QfWuAH3fN2yNq2u8YcW/agklRJ54rIwRnhtmKwoj6nB1b7KqwR2xIz9rBSpTRf0ASecENUn9/dmU8WOKG6XSXTLgwxl5JKw4xEVYk7HCcNMXRW+Nd6oHtd5RkY7CSF5bT4N23AGJ8R1el7erIE0fFomy88vGdFp7IZYF3w+2mQxDMQgnst2pyqfzibMiIOM36QhlE6TPh49a/QEyLd4xpvuGPQ3s6UFinbAohkob4wZPnHOqJsqfqLu/GAVRFRizY2iKElcmIL3FNb9bUI3+0Vw201f0a7ggvMa0kRHN6yBWRybFQ56mM8sdwWtxlDXeETosBZQDogbUdLwlGwzWDrNtLgMIjAVNy81h05MiJ4LEvgkmGItWiG+Jdw8ZEaL1EGlZpqR7MhMB7SsJQadx2lpQnh4kW1w3NyXCj0bvxCDbQkDWtN+REpesBdvHocrQ9L029FlmXMgiLldoEVJTUYsNpBtUhMzQkXL6bTAjXZltfLtWgnGGvmciXDMsQo08QAt0NB58OHpozTqv6K9K0ewSEh07SqvyOcBuDlEaqYcem3qoxprRZpHQumsJMNRhzfjjI8cDsUNC49kQlYJ5Ecs7ubxTLEKKe6xItFhFwfHjUzGVnOeLCUSNF7N+3OYgxDbN7znwl496vYsM6i9mQJulEynixYzSi2A54840nTsNaa/MEWmOp+WCrPbsey9UvOYJKVKK3P/XMYy8dz5KYdjTXVD+tUPKcFbjMErAjdSyTS/v6xQlPOhKulS03C7FC8IpGuQsBSxhFaH+ORZJpOPygKN3sjrapRdrOXr4cqAavKHziAByIdPGUka/h9PHhW/UNLvxLODsdDAlaT/xLJMltt0GWUi7R5fTz4q/thiZeJB3fypoPJ/ofMv8UJrvFbLnWzd4xKnOr/wk8FdaVjHl64ElPwn+xysjXkj4wmGl63ZoWRjM1afh8/GfphiVd9ZMgZAhb37EUs5pL62BoJl4z6EplziHRx+ppoMfzRcNOW57J4836AyKk4izkq7RrBxyexQES46fABwXI15HUUA7L4BS1PGD5e4fXxz5gTFG7Bc0PAyvzHCYssQjMDbtSS5eM5t7fxsE2PEvEtQ3PZjyqdlll3w7H0SJQ3etv17/DxeEGqcKvDYxkfWUPOu+Gpej1fzpzl4/ni+EcclmA1gGCagZAaaahhaAEbaocboeTPPgGWj+fJ+4AzbDoULdACF+l0wwFlw+LLz5CljXhxAqvuuRZ837l3NRNsKS1ashSkCfFVChlEQZV0gZ+V4eO5dqiPNKu80j2rJBisIQmLKxA8Jm/7Im5lYvn4GoeBd83Foc++RdsO82BBYxzyJJEuCSOknQvDx69xbIwZOh6VigWr6xtZNi2ujBu+ecwMtVl3IHAsqBuqwOud7rDhI2X+leRww+S9l6wp3mAMrfBgCwgNa2DDapiy/2qkw1f6gDRCdp9YPn4t7JsAkuCw/JIaHLM1aYQ6M45l+fjwSib8VmABYaXhuEpbd0Xop2EtaCMMsFzcx9vk5FpYHkF4WHBImX/MwEYP3X+aUEb4yD6QcZeZvBYWbIkOS/JLDfNZgDRCKRAvHcfLcvV+MS2hYXWHFiLrFi6kEFiUEZphQ2D3KR8vy/LiulyAP5RFe1unPkvGUPWPK9MOF8dZD1HuACd9vF1JsdAQDWIHRKyg1C7G8CmpLcxpkmvCkFoXIo63YVUX1eV2sb0wiSPoW6bAhR9WMiTvTd4ZGJrMdHI1istKlhcl+Sd4Pkuwage4CSypKmKV1BcsdwH1YAE1JCwz/D7eKWm6DXzYsJXP8p99KhasxLEOMTnDf5EPGlDP2gndf7mpkbAyGSV4r2euC51WnuuS300s8hPkPiHcgl4s8KNKDCxrty0wwfiMrXaE27A4o0KBIJdCOyxJCk9RDJyNMdmDJcsB7Qy8gEm4gmVy9y9gpcd6yg6V8mMK3XAm+2BlZPbOGJGCD5mZ/4UkMiJnBzfUAwV4/S8MtvyorLImZiAPptjAEi1yoLdpzKHFesoHnZfhrsyzH52EszJpsW6+GGBlkuJNhtSd79bQYkC4pB86p/Furt/XcCOE9Se0PwJTolx5LBosOovA+kYZrPi/d3Cr0LAyChV1PA6xwj8R78Gn0gh0RAAeaVZShJr+QY1mtZkZ4s/lApOh9eQMcRc7tub006L1qeFdKDCeGM8p55oJHf1swpsSiOJV31MygD0TSipWJfmRvfwgUcGDdaH6lWE9UNT8c8T8pYDwcNQv8EexaWX8IyuzOWycGXDpAy6fNStR5Icl5O2Z1AOs4KVqz9fj8fzvKfNHFcLWhKQMRaZH1uZmeqhNrU85Tg7TDbREFdoK6boFB4iq63rA06QjPxDssk2xsmCZ0qzHLVv/UCEt99sSba0DRa/5wsQdNXi6b2YoVqgkDG1cqla+1htamnj3V9gKGFqBestj+cBv8k4ODFW60VAlJ7kNP+MTOvoRYnutYFZviawBuKVcFgkL/geTsaIOLFZgukDq6dv60SWcFmTl1oY1LI+lwjSkyUq86N0RWaW9kNXFwqe0LtAAv0toM+0fWek0TEDCnK1oCWVM/IYopd/+ZMzLth9Ww0a16ValqLZsv6WK/fhNI8lHS30HK+s5sETcsOlW75gjS7UN0YIVtMktio7YvyxBspLe9ZWDSwVF75lNh5ZbHJZUnZ0T8X/iieeXX/SL9+6nDzaHrstK+z2WOR06+7yMR+0Lp27o7y9p0/fP58Z/w00vJHXs0JsO1RiMK0vg78JfQVOHHzKdg29NGVqhDxScDu2ap2FMflATnCfpH7h0TfCUo5CdS5P/qkRE6sJqaKdCz4N+gcRYYuJSteQHfuHgxvRcaZKVuTrUGuLdFr1AwHg81fD6auvHU08/+GY2cPY8HGo4K214+hi7X0wGg/FT2vqVKluapk3Hn/BTS6B79bQ5NInZMv/x/Bmfshx1L88ex/Px+OzyE7sAjMn51Xg+/9xPWYaWe/XxZrXSSiuttNJKK6200ju1tQu1Mws5cNc58PtSrktIvXZKtvKd/sLjZvvwuNJeYUlXJqDWsymo/O7C44pFdFwuMqxKatvSy5uvURi5sFK5Rfa11Um9HVauaCq7/Y6rFEQerNIo+Kh+PfUOWGWrXfFLwUrtB2PYKa1gJTBY2UCvcrCfWsFKYLBSuUOeg1awbBVT7GMqudQKliU/rFSnxTxmO7uCZQvBQlFUiRWZznr+Q1awii9wumNGpjAezb4Wg2H1C4ez2azCjtTCYS1sLpAgrOxoKw9R0BcM49FisdIJgHWwu13OdUz1cqlRxfdGYcfWBrLiHVf4OnS2XqqXYfOdA1+7rQ/u6vuFYG0kIAo6MkXxaG92kGPCOliv552lUKpYym17uA7hetLxeCVHPf/4nWV7Wa95fcN0BBW7Xef1s/r8ZrmwWrax0JEpjEdNIyowYe3u+b2/dar9Hee9w3KKqZIHq//SK+Lv5SqJiu0ks+uf2vG3yIWV2C5C74W/f7AHEVWYsPovnRQld0iEwyrks9S7e7OC+LAOEYxD1vvmhTNg9be9ZVDRGyH5V7hpGgrrgBhWUOXdkvCwEq9wYsQiUxSP1gtMWC8Oq3yuntrO7XdQ3zvQEg/38pbcJJCjOoLVLzpvFUvlXL2e68D/h2cVG1YBunIsMoXxqO32aVi7yAZLnS17FuvPUuiVfdvLF7ZsjRCSLVdo8K47rDv53cOD798Ls426N1TFhpUYQV+e9yJTFI/uW69QsApoeV0eeQ224EHY8AyKsw5R3qeY23JrHb6PcjGB1Ye990Wm0BF17IiHggXN1rE5pBk8qucLpYJgoTVBsVNgnEB4WIldIjJF8WjW/uJJWMhqyT6hUMM3qQbAQhNKqkwEK7N6PGAlYHjpRKZ9bJSQsJArKhPLyX4PBx4ICwX2PWpbaScfD1gzLDKFg8RJnhOwwB5ps0iwlW+aYMPqw49iZBxBLh6w0OwHe/DdjUdtEbAqaAQdkGdE8feG9wITFmrfYexXQm8gPqyKLzL14lFbBCy48mbkEuA04ZsP2bDQyr3HSAq1YgLLSdmYXa1AR1t3hg4BC7qs0g59yhxBgQ1rVAqAHSNYaI4rtxIvBA0C1gsKNUuUUjjkAFivKDfEuKbYwHK+8VQLBuN1d4AQsFKsZZ1PPTdVw4b1YrfPs5JW8YGFItMUdCkdrzMErOI7YW1/BVi+nXorleC9HhFWx81efGVYCS/xiUWMbDPM5gO07zYNMEPoEllJ/zjBQqvnFJEJZDr47PpWkNxVDBsWEZj4FSdY7kSXqmPbDzgsFN5jDdliw0JryCKjQaxgOTvQJexVAlYLLbLDP4INawZdY49aAcQMVmJ9v2cqt4d1hICFArJeUH2EJwgrlcdfRadjefhRsIX+WzFh9SsFW9iLZNYBerZs+IYVgrVPvFwqBtghqtmJCyymSFjO4o6xEjYWNkTaCdoER6UVXwqWE73SW9SHdWxf20nAElUnTtFXnTDkEfwSvhYsJ0lX7FTwA3fr2W3sBsIsNLg8cVehU8CT84/N/iti9cVg9VH0Wqzv+vIsM2uhVMI6inKq2Vc8HePWE+ZGzkzS3+24u65fC1ai4vS21BvNCgcHhUpr1IF7hx2snAFFudncqDWbtbZGaAbccjZhs7nt3VartfuSg0myrwgr0XKLmLOdnKmetxu/5/dEWWcBlc13Op28Wxjy6u4SFkvmO6h16TVWoQNTrElty1eZ61dxHwuf3O0tNBAdWMC3/e8qPyqUvySsxKxOV3aYRpgifP4Iqx/xVs/glSos6W3EoYomTOxw6fsriavYqdNR+ajuy+j4Uw1EyVLWGpLCwnqtWyubOseFFfasI8vUjU6V13oHOaVi0fRdqRazMDWVK9lHmcfU/d7/YMNpbjaur1vzYsX+pLp4xWyFii2Oqto+PLJCo/g+G21ny+Vyp7g9agWeqbL7kiqVs8XtjRZei/m99ZrqmK1T6+iNPvc1xVR9SzxHBTf/4CtaaaXP1v8BhJnqvFP1rCsAAAAASUVORK5CYII=">
+        <em>Nuevo logo de la empresa despues del cambio del cambio </em>
+    </div>
         </article>
-            <h2>Fundador</h2>
-    </article>
+            <h2>  Fundador:
+                Mark zuckerberg
+            </h2> 
+            <p>Empresario y programador informático estadounidense. Creador y presidente de la comunidad virtual Facebook, en el año 2008, con veintitrés años de edad, se convirtió en el multimillonario más joven de la lista que publica anualmente la revista Forbes</p>
+        
     </section>
-            <h1>Noticias</h1>
-</article>
-            <h2>Dia de la tierra</h2>
+    <section id="noticias">
+        <h1>Noticias</h1>
         <article>
-    <section>
+            <h2>Dia de la Tierra</h2>
+            <p>Meta introduce un nuevo formato de donaciones en Instagram Reels Con motivo de la celebración del Día de la Tierra</p>
+        </article>
+    </section>
     <footer></footer>
 </body>
 </html>
